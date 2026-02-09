@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Svitlana Atwood's Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Svitlana Atwood</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Front-End Developer</p>
+            <img src="img/lana1.jpg" alt="Svitlana Atwood smiling" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Design</h3>
+                    <p>I strive to create beautiful and intuitive web apps, meaning I design with both aesthetics and usability in mind. You will get your designs delivered as Figma files, as websites or both.</p>
+                </div> <!-- / service -->
+                
+               
+                <div class="service">
+                    <h3>Development</h3>
+                    <p>I am a versatile front-end developer specializing in React JS, with a strong foundation in HTML, CSS, and JavaScript. I enjoy building responsive, user-friendly web applications that solve real-world problems.</p>
+                </div> <!-- / service -->
+                
+                <!-- Add more services if you want -->
+            
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Projects</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Front-End Developer and baker</p>
+           
+           <div class="about-me__body">
+               <p>I'm a web developer and designer based out of Box Elder, SD. I love building apps that solve real-world problems, and that are delightful to use.</p>
+               <p>My background is in linguistics and translating, and I have a bachelors degree in Slavic Studies from Hunter College.</p>
+           </div>
+           
+           <img src="img/lana.jpg" alt="Svitlana Atwood running at the beach" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My projects</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="twimba.html" class="portfolio__item">
+                    <img src="img/twimba.png" alt="A screenshot of the current project" class="portfolio__img">
+                </a>
+               
+                
+                <!-- Portfolio item 02 -->
+                <a href="tenzies.html" class="portfolio__item">
+                    <img src="img/tenzies.jpg" alt="A screenshot of the current project" class="portfolio__img">
+                </a>
+    
+                
+                <!-- Portfolio item 03 -->
+                <a href="password-generator.html" class="portfolio__item">
+                    <img src="img/password-generator.jpg" alt="A screenshot of the current project" class="portfolio__img">
+                </a>
+                
+
+                <!-- Portfolio item 04 -->
+                <a href="meme-generator.html" class="portfolio__item">
+                    <img src="img/meme-generator.jpg" alt="A screenshot of the current project" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                 <a href="restaurant.html" class="portfolio__item">
+                    <img src="img/restaurant-menu.jpg" alt="A screenshot of the current project" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 06 -->
+                <a href="assembly.html" class="portfolio__item">
+                    <img src="img/assembly.png" alt="A screenshot of the current project" class="portfolio__img">
+                </a>
+                
+
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:atwoodsvitla@gmail.com" class="footer__link">atwoodsvitla@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/svitlana-atwood-913026198/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+               
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/atwoodsvitlana">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
