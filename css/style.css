@@ -3,9 +3,9 @@
 *::after {
     box-sizing: border-box;
 }
-
+ 
 /* Custom Properties, update these for your own design */
-
+ 
 :root {
     --ff-primary: 'Montserrat', serif;
     --ff-secondary: 'Roboto Slab', serif;
@@ -25,7 +25,7 @@
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
-
+ 
 @media (min-width: 800px) {
     :root {
         --fs-h1: 4.5rem;
@@ -34,15 +34,15 @@
         --fs-body: 1.125rem;
     }
 }
-
+ 
 /* General styles */
-
+ 
 /* endable this to add smooth scrolling */
 /* html {
     scroll-behavior: smooth;
 } */
-
-
+ 
+ 
 body {
     background: var(--color-light);
     color: var(--color-dark);
@@ -51,25 +51,25 @@ body {
     font-size: var(--fs-body);
     line-height: 1.6;
 }
-
+ 
 section {
     padding: 5em 2em;
 }
-
+ 
 img {
     display: block;
     max-width: 100%;
 }
-
+ 
 strong { font-weight: var(--fw-bold) }
-
+ 
 :focus {
     outline: 3px solid var(--color-accent);
     outline-offset: 3px;
 }
-
+ 
 /* Buttons */
-
+ 
 .btn {
     display: inline-block;
     padding: 1em 2.5em;
@@ -83,43 +83,43 @@ strong { font-weight: var(--fw-bold) }
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
 }
-
+ 
 .btn:hover {
     transform: scale(1.1);
 }
-
+ 
 /* Typography */
-
+ 
 h1,
 h2,
 h3 {
     line-height: 1;
     margin: 0;
 }
-
+ 
 h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
-
-
+ 
+ 
 .section__title {
     margin-bottom: .25em;
     align-self: center;
 }
-
+ 
 .section__title--intro {
     font-weight: var(--fw-reg);
 }
-
+ 
 .section__title--intro strong {
     display: block;
 }
-
+ 
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
 }
-
+ 
 .section__subtitle--intro,
 .section__subtitle--about {
     background: var(--color-accent);
@@ -128,21 +128,21 @@ h3 { font-size: var(--fs-h3) }
     margin-bottom: 1em;
     color: var(--color-light);
 }
-
+ 
 .section__subtitle--work {
     color: var(--color-accent);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
 }
-
+ 
 /* header */
-
+ 
 header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
 }
-
+ 
 .nav {
     position: fixed;
     background: var(--color-dark);
@@ -156,7 +156,7 @@ header {
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
-
+ 
 .nav__list {
     list-style: none;
     display: flex;
@@ -167,18 +167,18 @@ header {
     margin: 0;
     padding: 0;
 }
-
+ 
 .nav__link {
     color: inherit;
     font-weight: var(--fw-bold);
     font-size: var(--fs-h2);
     text-decoration: none;
 }
-
+ 
 .nav__link:hover {
     color: var(--color-accent);
 }
-
+ 
 .nav-toggle {
     padding: .5em;
     background: transparent;
@@ -189,32 +189,32 @@ header {
     top: 1em;
     z-index: 1000;
 }
-
+ 
 .nav-open .nav {
     transform: translateX(0);
 }
-
+ 
 .nav-open .nav-toggle {
     position: fixed;
 }
-
+ 
 .nav-open .hamburger {
     transform: rotate(.625turn);
 }
-
+ 
 .nav-open .hamburger::before {
     transform: rotate(90deg) translateX(-6px);
 }
-
+ 
 .nav-open .hamburger::after {
     opacity: 0;
 }
-
+ 
 .hamburger {
     display: block;
     position: relative;
 }
-
+ 
 .hamburger,
 .hamburger::before,
 .hamburger::after {
@@ -224,8 +224,8 @@ header {
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
 }
-
-
+ 
+ 
 .hamburger::before,
 .hamburger::after {
     content: '';
@@ -233,26 +233,26 @@ header {
     left: 0;
     right: 0;
 }
-
+ 
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
-
-
+ 
+ 
 /*  Intro section  */
-
+ 
 .intro {
     position: relative;
 }
-
+ 
 .intro__img {
     box-shadow: var(--bs);
 }
-
+ 
 .section__subtitle--intro {
     display: inline-block;
     color: var(--color-light);
 }
-
+ 
 @media (min-width: 600px) {
     .intro {
         display: grid;
@@ -282,11 +282,11 @@ header {
         width: calc(100% + 1.5em);
     }
 }
-
-
-
+ 
+ 
+ 
 /*  My services section  */
-
+ 
 .my-services {
     background-color: var(--color-dark);
     background-image: url(../img/coding.jpg);
@@ -297,12 +297,12 @@ header {
     color: var(--color-dark);
     text-align: center;
 }
-
+ 
 .section__title--services {
     color: var(--color-dark);
     position: relative;
 }
-
+ 
 .section__title--services::after {
     content: '';
     display: block;
@@ -312,16 +312,16 @@ header {
     background: var(--color-light);
     opacity: 0.25;
 }
-
+ 
 .services {
     margin-bottom: 4em;
 }
-
+ 
 .service {
     max-width: 400px;
     margin: 0 auto 2em;
 }
-
+ 
 @media (min-width: 800px) {
     .services {
         display: flex;
@@ -333,22 +333,22 @@ header {
     .service + .service {
         margin-left: 2em;
     }
-
+ 
     .service {
         margin-bottom: 0;
     }
 }
-
-
+ 
+ 
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
 }
-
+ 
 .about-me__img {
     box-shadow: var(--bs);
 }
-
+ 
 @media (min-width: 600px) {
     .about-me {
         display: grid;
@@ -380,15 +380,15 @@ header {
         z-index: 2;
     }
 }
-
+ 
 /* My Work */
-
+ 
 .my-work {
     background-color: var(--color-accent);
     color: var(--color-light);
     text-align: center;    
 }
-
+ 
 .portfolio {
     margin: 0 auto;
     max-width: 1000px;
@@ -396,62 +396,124 @@ header {
     grid-gap: 2em;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-
+ 
 .portfolio__item {
     background: var(--color-accent);
     overflow: hidden;
-
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.12);
 }
-
+ 
+.portfolio__img-wrap {
+    display: block;
+    overflow: hidden;
+    height: 220px;
+}
+ 
 .portfolio__img {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
     object-fit: cover;
+    width: 100%;
     height: 100%;
 }
-
+ 
 .portfolio__item:focus {
     position: relative;
     z-index: 2;
 }
-
+ 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
     opacity: .5;
 }
-
-
+ 
+/* Case-study placeholder tiles (swap for real screenshots) */
+ 
+.portfolio__placeholder {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.08);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.35);
+    color: var(--color-light);
+    font-family: var(--ff-secondary);
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 1em;
+}
+ 
+.portfolio__item--case-study {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+ 
+/* Captions under every card */
+ 
+.portfolio__caption {
+    padding: 1.25em 1.5em 1.5em;
+    text-align: left;
+    flex: 1;
+}
+ 
+.portfolio__title {
+    font-size: 1.1rem;
+    margin-bottom: 0.35em;
+    color: var(--color-light);
+}
+ 
+.portfolio__tags {
+    font-family: var(--ff-secondary);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.75;
+    margin: 0 0 0.75em;
+}
+ 
+.portfolio__desc {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    margin: 0;
+    opacity: 0.95;
+}
+ 
+ 
 /* footer */
-
+ 
 .footer {
     background: var(--color-light);
     color: var(--color-dark);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
-
+ 
 }
-
+ 
 .footer a { 
     color: inherit;
     text-decoration: none;
 }
-
+ 
 .footer__link {
     font-weight: var(--fw-bold);
 }
-
+ 
 .footer__link:hover,
 .social-list__link:hover {
     opacity: .7;
 }
-
+ 
 .footer__link:hover {
     text-decoration: underline;
 }
-
+ 
 .social-list {
     list-style: none;
     display: flex;
@@ -459,41 +521,41 @@ header {
     margin: 2em 0 0;
     padding: 0;
 }
-
+ 
 .social-list__item {
     margin: 0 .5em;
 }
-
+ 
 .social-list__link {
     padding: .5em;
 }
-
-
+ 
+ 
 /* Individual portfolio item styles */
-
+ 
 .portfolio-intro {
     padding: 5em 2em 2em 2em;
 }
-
+ 
 .portfolio-item-individual {
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
 }
-
+ 
 .portfolio-item-individual p {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
-
+ 
 .portfolio-item-individual div {
     display: flex;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
-
+ 
 .portfolio-item-individual a {
     margin-right: 0.8em;
     font-size: 1rem;
@@ -501,5 +563,5 @@ header {
     color: var(--color-dark);
     padding: 0.25em 1em;
     text-decoration: none;
-
+ 
 }

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Svitlana Atwood's Portfolio</title>
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-
+ 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         
@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
         
         <link rel="stylesheet" href="css/style.css">
-
+ 
     </head>
     <body>
         <header>
@@ -82,40 +82,66 @@
             <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
             
             <div class="portfolio">
+                <!-- Case study 01 - TODO: swap placeholder for a real screenshot (img/oter-events.jpg) and wrap in <a href="LIVE_URL"> once you add it -->
+                <div class="portfolio__item portfolio__item--case-study">
+                    <div class="portfolio__placeholder"><span>Screenshot coming soon</span></div>
+                    <div class="portfolio__caption">
+                        <h3 class="portfolio__title">Oter Living &mdash; Events Page</h3>
+                        <p class="portfolio__tags">Shopify Liquid &middot; Custom Schema &middot; Block-Based CMS</p>
+                        <p class="portfolio__desc">Built an editorial events page for a luxury lingerie brand's event series &mdash; hero section, calendar-style event list, spotlight cards, and a contact form. Used Shopify's block system so non-technical marketers can add or reorder events without touching code, and fixed a cross-month display bug in the timeline with a fallback date field.</p>
+                    </div>
+                </div>
+ 
+                <!-- Case study 02 - TODO: swap placeholder for a real screenshot (img/oter-video-banner.jpg) and wrap in <a href="LIVE_URL"> once you add it -->
+                <div class="portfolio__item portfolio__item--case-study">
+                    <div class="portfolio__placeholder"><span>Screenshot coming soon</span></div>
+                    <div class="portfolio__caption">
+                        <h3 class="portfolio__title">Split Video/Heading Banner</h3>
+                        <p class="portfolio__tags">Shopify Liquid &middot; Reusable Sections &middot; CSS</p>
+                        <p class="portfolio__desc">Designed and built a responsive, schema-driven section pairing autoplaying video with editorial typography, matching the brand's existing design language. Built for reuse across campaigns, so merchandisers can swap video and copy without a developer.</p>
+                    </div>
+                </div>
+ 
                 <!-- Portfolio item 01 -->
                 <a href="twimba.html" class="portfolio__item">
-                    <img src="img/twimba.png" alt="A screenshot of the current project" class="portfolio__img">
+                    <span class="portfolio__img-wrap"><img src="img/twimba.png" alt="A screenshot of the Twimba project" class="portfolio__img"></span>
+                    <div class="portfolio__caption">
+                        <h3 class="portfolio__title">Twimba</h3>
+                        <p class="portfolio__tags">JavaScript &middot; DOM Manipulation &middot; CRUD</p>
+                        <p class="portfolio__desc">A Twitter-style feed built to practice full CRUD functionality &mdash; creating, rendering, and deleting posts dynamically with vanilla JS.</p>
+                    </div>
                 </a>
-               
-                
+ 
                 <!-- Portfolio item 02 -->
                 <a href="tenzies.html" class="portfolio__item">
-                    <img src="img/tenzies.jpg" alt="A screenshot of the current project" class="portfolio__img">
+                    <span class="portfolio__img-wrap"><img src="img/tenzies.jpg" alt="A screenshot of the Tenzies project" class="portfolio__img"></span>
+                    <div class="portfolio__caption">
+                        <h3 class="portfolio__title">Tenzies</h3>
+                        <p class="portfolio__tags">React &middot; useState &middot; Hooks</p>
+                        <p class="portfolio__desc">A dice game built to practice React state and hooks &mdash; managing array state, conditional rendering, and win-condition logic.</p>
+                    </div>
                 </a>
-    
-                
+ 
                 <!-- Portfolio item 03 -->
-                <a href="password-generator.html" class="portfolio__item">
-                    <img src="img/password-generator.jpg" alt="A screenshot of the current project" class="portfolio__img">
+                <a href="restaurant.html" class="portfolio__item">
+                    <span class="portfolio__img-wrap"><img src="img/restaurant-menu.jpg" alt="A screenshot of the restaurant menu project" class="portfolio__img"></span>
+                    <div class="portfolio__caption">
+                        <h3 class="portfolio__title">Restaurant Menu</h3>
+                        <p class="portfolio__tags">HTML &middot; CSS Grid &middot; Flexbox</p>
+                        <p class="portfolio__desc">A responsive restaurant menu site built to practice layout fundamentals &mdash; Grid and Flexbox composition without a framework.</p>
+                    </div>
                 </a>
-                
-
+ 
                 <!-- Portfolio item 04 -->
-                <a href="meme-generator.html" class="portfolio__item">
-                    <img src="img/meme-generator.jpg" alt="A screenshot of the current project" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 05 -->
-                 <a href="restaurant.html" class="portfolio__item">
-                    <img src="img/restaurant-menu.jpg" alt="A screenshot of the current project" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 06 -->
                 <a href="assembly.html" class="portfolio__item">
-                    <img src="img/assembly.png" alt="A screenshot of the current project" class="portfolio__img">
+                    <span class="portfolio__img-wrap"><img src="img/assembly.png" alt="A screenshot of the Assembly project" class="portfolio__img"></span>
+                    <div class="portfolio__caption">
+                        <h3 class="portfolio__title">Assembly</h3>
+                        <p class="portfolio__tags">React &middot; Game Logic</p>
+                        <p class="portfolio__desc">A word-guessing game built to practice dynamic rendering and game-state logic in React.</p>
+                    </div>
                 </a>
-                
-
+ 
             </div>
         </section>
         
