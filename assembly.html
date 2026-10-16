@@ -1,75 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Assembly: Endgame</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
-        <!-- Update these with your own fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
-        
-        <link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </head>
-    <body>
-        <header>
-            <button class="nav-toggle" aria-label="toggle navigation">
+    <meta
+        name="description"
+        content="Explore Assembly: Endgame, a React word-guessing game featuring interactive gameplay, state management, user input, and conditional rendering."
+    >
+
+    <title>Assembly: Endgame | Front-End Development Portfolio</title>
+
+    <!-- CSS Reset -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header">
+        <div class="header__container">
+
+            <a href="index.html" class="site-logo" aria-label="Home">
+                SA<span>.</span>
+            </a>
+
+            <button
+                class="nav-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+            >
                 <span class="hamburger"></span>
             </button>
-            <nav class="nav">
+
+            <nav class="nav" id="primary-navigation">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                    <li>
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#services" class="nav__link">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#about" class="nav__link">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="index.html#work"
+                            class="nav__link nav__link--active"
+                        >
+                            Projects
+                        </a>
+                    </li>
                 </ul>
             </nav>
-        </header>
-        
 
-        <section class="intro portfolio-intro">
-            <h1 class="section__title section__title--intro">
-                Assembly: Endgame<strong>web app</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">React</p>
-            <img src="img/assembly-win.png" alt="A screenshot of the project" class="intro__img">
-        </section>
-        
-        
-        <div class="portfolio-item-individual">
-            <div >
-                <a class="" target="_blank" href="https://github.com/atwoodsvitlana/Assembly"><i class="fab fa-github"></i> GitHub Repo</a>
-                <a class="" target="_blank" href="https://assembly.atwoodsvitlana.com/"><i class="fas fa-eye"></i> Live version   </a>
-            </div>
-            <p>Assembly: Endgame is a browser-based word-guessing game built as part of the Scrimba Frontend Developer course. The application challenges players to guess a hidden word within a limited number of attempts, providing visual feedback for correct and incorrect guesses.</p>
-            <p>This project focused on strengthening my React skills, including managing complex state, handling user input, and conditionally rendering UI elements based on game progress. It also gave me more experience structuring components and implementing game logic in a clear, maintainable way while keeping the interface simple and engaging.</p>
         </div>
-        
-        
-        <!-- Footer -->
-                <footer class="footer">
-            <!-- replace with your own email address -->
-            <a href="mailto:atwoodsvitla@gmail.com" class="footer__link">atwoodsvitla@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/svitlana-atwood-913026198/">
-                        <i class="fab fa-linkedin-in"></i>
+    </header>
+
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+
+        <!-- Project Introduction -->
+        <section class="project-hero">
+
+            <div class="project-hero__content">
+
+                <a href="index.html#work" class="back-link">
+                    <i
+                        class="fa-solid fa-arrow-left"
+                        aria-hidden="true"
+                    ></i>
+                    Back to projects
+                </a>
+
+                <p class="project-eyebrow">
+                    Featured Project / Front-End Development
+                </p>
+
+                <h1 class="project-title">
+                    Assembly: <span>Endgame</span>
+                </h1>
+
+                <p class="project-subtitle">
+                    An interactive word-guessing game built with React,
+                    featuring dynamic gameplay and state-driven UI updates.
+                </p>
+
+                <div
+                    class="project-tags"
+                    aria-label="Technologies used"
+                >
+                    <span>React</span>
+                    <span>JavaScript</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                </div>
+
+                <div class="project-actions">
+
+                    <a
+                        href="https://github.com/atwoodsvitlana/Assembly"
+                        class="project-button project-button--primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i
+                            class="fa-brands fa-github"
+                            aria-hidden="true"
+                        ></i>
+                        View GitHub
                     </a>
-                </li>
-               
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/atwoodsvitlana">
-                        <i class="fab fa-github"></i>
+
+                    <a
+                        href="https://assembly.atwoodsvitlana.com/"
+                        class="project-button project-button--secondary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i
+                            class="fa-solid fa-arrow-up-right-from-square"
+                            aria-hidden="true"
+                        ></i>
+                        Live Demo
                     </a>
-                </li>
-            </ul>
-        </footer>
-        
-        
-        <script src="js/index.js"></script>
-        
-    </body>
+
+                </div>
+
+            </div>
+
+            <div class="project-hero__image">
+                <img
+                    src="img/assembly-win.png"
+                    alt="Screenshot of the Assembly Endgame word-guessing game"
+                    class="project-preview"
+                >
+            </div>
+
+        </section>
+
+
+        <!-- Project Details -->
+        <section class="project-details">
+
+            <div class="project-details__main">
+
+                <p class="section-eyebrow">Overview</p>
+
+                <h2>A word game powered by React.</h2>
+
+                <p>
+                    Assembly: Endgame is a browser-based word-guessing game
+                    built as part of the Scrimba Frontend Developer course.
+                    Players must uncover a hidden word by guessing individual
+                    letters within a limited number of attempts.
+                </p>
+
+                <p>
+                    The application provides visual feedback for correct and
+                    incorrect guesses, allowing players to follow their
+                    progress as the game develops. Its interface updates
+                    dynamically in response to user interactions and the
+                    current state of the game.
+                </p>
+
+                <p>
+                    Building this project strengthened my understanding of
+                    React fundamentals, including state management,
+                    event handling, component structure, and conditional
+                    rendering. It also helped me practice organizing game
+                    logic and keeping the interface synchronized with
+                    changing application state.
+                </p>
+
+            </div>
+
+
+            <!-- Key Features -->
+            <aside class="project-details__sidebar">
+
+                <p class="section-eyebrow">Key Features</p>
+
+                <ul class="feature-list">
+
+                    <li>
+                        <i
+                            class="fa-solid fa-font"
+                            aria-hidden="true"
+                        ></i>
+                        <span>Interactive letter guessing</span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fa-solid fa-keyboard"
+                            aria-hidden="true"
+                        ></i>
+                        <span>User input and event handling</span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fa-solid fa-heart-pulse"
+                            aria-hidden="true"
+                        ></i>
+                        <span>Dynamic game state management</span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fa-solid fa-eye"
+                            aria-hidden="true"
+                        ></i>
+                        <span>Conditional UI rendering</span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fa-solid fa-circle-check"
+                            aria-hidden="true"
+                        ></i>
+                        <span>Visual feedback for guesses</span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fa-solid fa-gamepad"
+                            aria-hidden="true"
+                        ></i>
+                        <span>Win and loss game states</span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fa-solid fa-mobile-screen"
+                            aria-hidden="true"
+                        ></i>
+                        <span>Interactive browser-based gameplay</span>
+                    </li>
+
+                </ul>
+
+                <div class="project-tech">
+                    <p class="section-eyebrow">Built With</p>
+
+                    <p>React · JavaScript · HTML · CSS</p>
+                </div>
+
+            </aside>
+
+        </section>
+
+
+        <!-- Learning Outcomes -->
+        <section class="project-reflection">
+
+            <p class="section-eyebrow">Development Process</p>
+
+            <h2>What I learned.</h2>
+
+            <div class="reflection-grid">
+
+                <article class="reflection-card">
+                    <span class="reflection-number">01</span>
+
+                    <h3>Managing React state</h3>
+
+                    <p>
+                        Using React state to track guessed letters, update
+                        game progress, and keep the interface synchronized
+                        with player interactions.
+                    </p>
+                </article>
+
+
+                <article class="reflection-card">
+                    <span class="reflection-number">02</span>
+
+                    <h3>Handling user interactions</h3>
+
+                    <p>
+                        Responding to letter selections, processing guesses,
+                        and connecting user actions to the underlying
+                        game logic.
+                    </p>
+                </article>
+
+
+                <article class="reflection-card">
+                    <span class="reflection-number">03</span>
+
+                    <h3>Rendering UI conditionally</h3>
+
+                    <p>
+                        Displaying different visual states based on game
+                        progress, including correct guesses, incorrect
+                        guesses, and the final game outcome.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Next Project CTA -->
+        <section class="next-project">
+
+            <p class="section-eyebrow">Explore More</p>
+
+            <h2>More projects. More possibilities.</h2>
+
+            <a href="index.html#work" class="next-project__link">
+                View all projects
+
+                <i
+                    class="fa-solid fa-arrow-right"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+
+        <div class="footer__container">
+
+            <div class="footer__intro">
+
+                <a
+                    href="index.html"
+                    class="site-logo site-logo--footer"
+                >
+                    SA<span>.</span>
+                </a>
+
+                <p>
+                    Building thoughtful, responsive web experiences
+                    one project at a time.
+                </p>
+
+            </div>
+
+
+            <div class="footer__contact">
+
+                <p class="footer__label">Let's connect</p>
+
+                <a
+                    href="mailto:atwoodsvitla@gmail.com"
+                    class="footer__email"
+                >
+                    atwoodsvitla@gmail.com
+                </a>
+
+                <ul class="social-list">
+
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/svitlana-atwood-913026198/"
+                            aria-label="LinkedIn profile"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i
+                                class="fa-brands fa-linkedin-in"
+                                aria-hidden="true"
+                            ></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://github.com/atwoodsvitlana"
+                            aria-label="GitHub profile"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i
+                                class="fa-brands fa-github"
+                                aria-hidden="true"
+                            ></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer__bottom">
+            <p>&copy; 2026 Svitlana Atwood. All rights reserved.</p>
+            <p>Designed &amp; developed with intention.</p>
+        </div>
+
+    </footer>
+
+
+    <!-- Main JavaScript -->
+    <script src="js/index.js" defer></script>
+
+</body>
 </html>
