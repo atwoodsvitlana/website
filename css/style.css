@@ -602,9 +602,23 @@ h1, h2, h3 {
 
 /* Featured card */
 .project-card--featured {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    min-height: 420px;
+}
+
+.project-card--featured h3 {
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.project-card--featured p {
+    max-width: 520px;
+    line-height: 1.8;
+}
+
+.project-card--featured .project-card__link {
+    font-weight: 600;
 }
 
 /* Reduced image heights */
@@ -616,7 +630,8 @@ h1, h2, h3 {
 }
 
 .project-card--featured .project-card__visual {
-  min-height: 290px;
+   width: 100%;
+  min-height: 460px;
 }
 
 .project-card__visual--placeholder {
@@ -784,7 +799,7 @@ h1, h2, h3 {
 }
 
 .project-card--featured .project-card__body {
-  padding: 30px;
+  padding: 40px;
   justify-content: center;
 }
 
@@ -1243,8 +1258,7 @@ h1, h2, h3 {
   }
 
   .project-card--featured {
-    grid-column: auto;
-    display: flex;
+    grid-template-columns: 1fr;
   }
 
   .project-card__visual {
@@ -1252,7 +1266,7 @@ h1, h2, h3 {
   }
 
   .project-card--featured .project-card__visual {
-    min-height: 230px;
+    min-height: 280px;
   }
 
   .project-card__visual--image img {
@@ -1265,7 +1279,7 @@ h1, h2, h3 {
 
   .project-card__body,
   .project-card--featured .project-card__body {
-    padding: 20px;
+    padding: 24px;
   }
 
   .project-card__topline {
@@ -1396,3 +1410,82 @@ h1, h2, h3 {
     padding: 16px !important;
   }
 }
+
+/* Featured Bella Otér card */
+
+/* FEATURED BELLA OTÉR PROJECT */
+.work .project-card.project-card--featured {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: minmax(520px, auto);
+    min-height: 520px;
+    align-items: stretch;
+}
+
+/* Full-height image column */
+.work .project-card--featured .project-card__visual {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    width: 100%;
+    height: 100% !important;
+    min-height: 520px !important;
+    overflow: hidden;
+    padding: 0;
+}
+
+/* Make the actual screenshot fill the image area */
+.work .project-card--featured .project-card__visual img {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 76px) !important;
+    min-height: 0 !important;
+    object-fit: cover;
+    object-position: center;
+}
+
+.work .project-card--featured .project-card__index,
+.work .project-card--featured .project-card__visual-label {
+    z-index: 3;
+}
+
+.work .project-card--featured .project-card__visual {
+    background: var(--white);
+}
+/* Project information on the right */
+.work .project-card--featured .project-card__body {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Mobile */
+@media (max-width: 680px) {
+    .work .project-card.project-card--featured {
+        grid-template-columns: 1fr;
+        grid-template-rows: 280px auto;
+        min-height: auto;
+    }
+
+    .work .project-card--featured .project-card__visual {
+        grid-column: 1;
+        grid-row: 1;
+        min-height: 280px !important;
+    }
+
+    .work .project-card--featured .project-card__body {
+        grid-column: 1;
+        grid-row: 2;
+        padding: 24px;
+    }
+}
+
+
