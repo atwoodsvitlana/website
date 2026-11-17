@@ -310,7 +310,7 @@ h3 {
 }
 
 .project-title span {
-    display: block;
+    /* display: block; */
     color: var(--color-accent);
 }
 
